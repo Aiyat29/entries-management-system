@@ -1,0 +1,30 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: aia291152@gmail.com
+    password: zcmurncsfaycqzjh
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
+  application:
+    name: EntryAPI
+  datasource:
+    url: jdbc:postgresql://104.248.46.170:5432/postgres
+    username: postgres
+    password: 12345
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
+
+
